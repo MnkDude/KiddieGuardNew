@@ -6,3 +6,5 @@ Also app used history can be viewed through this.
 Provided multiple language support English & Tamil(for my native people).
 This was done as my college project. 
 Supports with kitkat to pie android versions
+
+Application help can be found in HelpActivity
