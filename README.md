@@ -1,6 +1,6 @@
 # KiddieGuardNew
 
-KiddieGuard is a parentalcontrol app. 
+KiddieGuard is a parental control app(https://en.wikipedia.org/wiki/Parental_controls). 
 It having options for blocking apps, wifi, bluetooth with multiple options. 
 Also app used history can be viewed through this. 
 Provided multiple language support English & Tamil(for my native people).
