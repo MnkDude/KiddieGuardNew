@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_list_preference_titles">
+        <item>English</item>
+        <item>தமிழ்</item>
+    </string-array>
+    <string-array name="settings_list_preference_values">
+        <item>en</item>
+        <item>ta</item>
+    </string-array>
+    <string-array name="block_method">
+        <item>Show block app screen</item>
+        <item>Close Application immediately</item>
+    </string-array>
+    <string-array name="block_method_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

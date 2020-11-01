@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tm1"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="@string/add_task"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/tm3"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="@string/app_history"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/tm4"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/settings"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/tm6"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/help"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/tm5"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/aboutTitle"
+        app:showAsAction="withText" />
+
+</menu>

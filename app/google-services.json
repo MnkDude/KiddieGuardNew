@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "8171116399",
+    "firebase_url": "https://parentalcontrol-543d7.firebaseio.com",
+    "project_id": "parentalcontrol-543d7",
+    "storage_bucket": "parentalcontrol-543d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8171116399:android:490c755b7dbf2eed",
+        "android_client_info": {
+          "package_name": "com.nizam.training.parentalcontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8171116399-6vg2h3u42lubaki9s8nm1nl94lngpt8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nizam.training.parentalcontrol",
+            "certificate_hash": "d64886ef932f714d6175ba4cf32aee2c7b9cd9cb"
+          }
+        },
+        {
+          "client_id": "8171116399-e8hvogvf7lgj2200idmunidbiotjqp5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQcVhGV-4c8FzYKEH5Lmj4781-sauIptc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8171116399-e8hvogvf7lgj2200idmunidbiotjqp5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

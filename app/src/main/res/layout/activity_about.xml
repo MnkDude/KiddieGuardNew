@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlabout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/imaab"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/ver"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="appIcon"
+        android:src="@mipmap/ogimage_round1"
+        tools:srcCompat="@mipmap/ogimage_round1" />
+
+    <TextView
+        android:textSize="40sp"
+        android:id="@+id/apabout"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/ver"
+        android:textSize="20sp"
+        android:layout_below="@id/apabout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/version" />
+
+    <Button
+        android:id="@+id/source"
+        android:layout_marginTop="20dp"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imaab"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:background="@null"
+        android:text="@string/source_code"
+        android:textAllCaps="false"
+        android:typeface="serif" />
+</RelativeLayout>

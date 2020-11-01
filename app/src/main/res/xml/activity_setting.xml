@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ListPreference
+        android:entries="@array/settings_list_preference_titles"
+        android:entryValues="@array/settings_list_preference_values"
+        android:key="lang_select"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/lang" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="history_switch"
+        android:summary="@string/hisDesc"
+        android:title="@string/historysettingtitle" />
+    <ListPreference
+        android:entries="@array/block_method"
+        android:entryValues="@array/block_method_values"
+        android:key="block_method"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/app_block_method" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="unins_on_off"
+        android:summary="@string/unindesc"
+        android:title="@string/uninstit" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="app_off"
+        android:summary="@string/shutDesc"
+        android:title="@string/shutTitle" />
+
+</PreferenceScreen>

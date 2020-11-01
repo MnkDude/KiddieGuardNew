@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/CreatePin"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        app:fontFamily="cursive"
+        tools:textColor="@color/colorAccent"
+        tools:textFontWeight="20dp" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:text="@string/EnterPin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/ConfirmPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="30dp"
+        android:text="@string/ConfirmPin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/pin"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/password"
+        android:inputType="numberPassword"
+        android:maxLength="4" />
+
+    <EditText
+        android:id="@+id/ConPin"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pin"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/ConfirmPin"
+        android:inputType="numberPassword"
+        android:maxLength="4" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ConPin"
+        android:layout_centerHorizontal="true"
+        android:background="#4E49DF"
+        android:text="@string/CreatePin"
+        android:textAllCaps="false"
+        android:textStyle="italic" />
+</RelativeLayout>

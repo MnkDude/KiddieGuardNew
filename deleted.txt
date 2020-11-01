@@ -1,0 +1,51 @@
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.view.View;
+import android.widget.Toast;
+import java.util.Collections;
+final SharedPreferences sharedPreferences = getSharedPreferences("PinNumber", Context.MODE_WORLD_WRITEABLE);
+  /* PackageManager packageManager = getPackageManager();
+        Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
+        mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+
+        List<ResolveInfo> appList = packageManager.queryIntentActivities(mainIntent, 0);
+        Collections.sort(appList, new ResolveInfo.DisplayNameComparator(packageManager));
+        List<PackageInfo> packs = packageManager.getInstalledPackages(0);
+        for (int i = 0; i < packs.size(); i++) {
+            PackageInfo p = packs.get(i);
+            ApplicationInfo a = p.applicationInfo;
+            // skip system apps if they shall not be included
+            if ((a.flags & ApplicationInfo.FLAG_SYSTEM) == 1) {
+                continue;
+            }
+            //appList.add(p.packageName);
+            System.out.println("application = "+p.packageName);*/
+        List<ApplicationInfo> apps = getPackageManager().getInstalledApplications(0);
+        for (ApplicationInfo app : apps) {
+            if ((app.flags & (ApplicationInfo.FLAG_UPDATED_SYSTEM_APP | ApplicationInfo.FLAG_SYSTEM)) > 0) {
+                // It is a system app
+                System.out.println("System Apps = " + app.toString());
+            } else {
+                // It is installed by the user
+                System.out.println("User Installed  Apps = " + app.toString());
+            }
+        }
+   /* SplashThread = new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                int waited = 0;
+                while (waited < 3500) {
+                    try {
+                        sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    waited += 100;
+                }*/
+//                MainActivity.this.finish();
+//                Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+//                startActivity(intent);
+//SplashThread.start();

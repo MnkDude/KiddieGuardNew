@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rell"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppSettingActivity">
+
+    <ImageView
+        android:id="@+id/SettingIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/nothing" />
+
+    <TextView
+        android:id="@+id/SettingLabel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/SettingIcon"
+        android:gravity="center"
+        android:text=""
+        android:textAllCaps="true"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/SettingInactiveFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SettingLabel"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/de_active_for"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <ToggleButton
+        android:id="@+id/tb1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/SettingLabel"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/DeactiveTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SettingInactiveFor"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/_00_00"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/DeacBetween"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DeactiveTime"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/inactive_in"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/firstTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DeacBetween"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/time_diff"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/andText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DeacBetween"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/firstTime"
+        android:text="@string/and"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/secondTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DeacBetween"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/andText"
+        android:text="@string/time_diff"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <ToggleButton
+        android:id="@+id/tb2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/DeactiveTime"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp" />
+</RelativeLayout>
